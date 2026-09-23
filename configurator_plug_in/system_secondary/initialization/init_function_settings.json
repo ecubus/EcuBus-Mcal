@@ -1,0 +1,604 @@
+{
+    "init_function_settings": {
+        "Det_Init": {
+            "InitFunctions": "Det_Init",
+            "Init Phase": "INIT_ZERO",
+            "BswModule": "Det",
+            "EcuMModuleParameter": "NULL_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Det"
+        },
+        "Det_Start": {
+            "InitFunctions": "Det_Start",
+            "Init Phase": "INIT_ZERO",
+            "BswModule": "Det",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Det"
+        },
+        "Mcu_Init": {
+            "InitFunctions": "Mcu_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Mcu",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Port_Init": {
+            "InitFunctions": "Port_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Port",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Dma_Init": {
+            "InitFunctions": "Dma_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Dma",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "E2EXf_Init": {
+            "InitFunctions": "E2EXf_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "E2EXf",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Fls_17_Dmu_Init": {
+            "InitFunctions": "Fls_17_Dmu_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Fls",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Spi_Init": {
+            "InitFunctions": "Spi_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Spi",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "Spi_Init(&Spi_Config);",
+            "EcuMMoudleHeader": "Spi.h",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "BrsHw_EnableHwAccess": {
+            "InitFunctions": "BrsHw_EnableHwAccess",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "BrsHw",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Fee_Init": {
+            "InitFunctions": "Fee_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Fee",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Adc_Init": {
+            "InitFunctions": "Adc_Init",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Adc",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Adc"
+        },
+        "Dem_PreInit": {
+            "InitFunctions": "Dem_PreInit",
+            "Init Phase": "INIT_ONE",
+            "BswModule": "Dem",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "WdgM_Init": {
+            "InitFunctions": "WdgM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "WdgM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/WdgM"
+        },
+        "Tja1145_Init": {
+            "InitFunctions": "Tja1145_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Tja1145",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "TJA1145_Init();",
+            "EcuMMoudleHeader": "TJA1145.h",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Can_Init": {
+            "InitFunctions": "Can_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Can",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Lin_Init": {
+            "InitFunctions": "Lin_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Lin",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Eth_Init": {
+            "InitFunctions": "Eth_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Eth",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "CanIf_Init": {
+            "InitFunctions": "CanIf_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CanIf",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CanIf"
+        },
+        "LinIf_Init": {
+            "InitFunctions": "LinIf_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "LinIf",
+            "EcuMModuleParameter": "NULL_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/LinIf"
+        },
+        "EthIf_Init": {
+            "InitFunctions": "EthIf_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "EthIf",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/EthIf"
+        },
+        "Com_Init": {
+            "InitFunctions": "Com_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Com",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Com"
+        },
+        "PduR_Init": {
+            "InitFunctions": "PduR_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "PduR",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/PduR"
+        },
+        "CanSM_Init": {
+            "InitFunctions": "CanSM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CanSM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CanSM"
+        },
+        "LinSM_Init": {
+            "InitFunctions": "LinSM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "LinSM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/LinSM"
+        },
+        "EthSM_Init": {
+            "InitFunctions": "EthSM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "EthSM",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/EthSM"
+        },
+        "CanNm_Init": {
+            "InitFunctions": "CanNm_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CanNm",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CanNm"
+        },
+        "Nm_Init": {
+            "InitFunctions": "Nm_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Nm",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Nm"
+        },
+        "CanTp_Init": {
+            "InitFunctions": "CanTp_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CanTp",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CanTp"
+        },
+        "LinTp_Init": {
+            "InitFunctions": "LinTp_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "LinTp",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/LinTp"
+        },
+        "CanXcp_Init": {
+            "InitFunctions": "CanXcp_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Xcp",
+            "EcuMModuleParameter": "NULL_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Xcp"
+        },
+        "XcpOnEth_Init": {
+            "InitFunctions": "XcpOnEth_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Xcp",
+            "EcuMModuleParameter": "NULL_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Xcp"
+        },
+        "Xcp_Init": {
+            "InitFunctions": "Xcp_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Xcp",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Xcp"
+        },
+        "NvM_Init": {
+            "InitFunctions": "NvM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "NvM",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/NvM"
+        },
+        "ComM_Init": {
+            "InitFunctions": "ComM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "ComM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/ComM"
+        },
+        "Dcm_Init": {
+            "InitFunctions": "Dcm_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Dcm",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Dcm"
+        },
+        "SoAd_Init": {
+            "InitFunctions": "SoAd_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "SoAd",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/SoAd"
+        },
+        "DoIP_Init": {
+            "InitFunctions": "DoIP_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "DoIP",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/DoIP"
+        },
+        "CryIf_init": {
+            "InitFunctions": "CryIf_init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CryIf",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CryIf"
+        },
+        "Csm_Init": {
+            "InitFunctions": "Csm_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Csm",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Csm"
+        },
+        "Dlt_Init": {
+            "InitFunctions": "Dlt_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Dlt",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Dlt"
+        },
+        "StbM_Init": {
+            "InitFunctions": "StbM_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "StbM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/StbM"
+        },
+        "EthTSyn_Init": {
+            "InitFunctions": "EthTSyn_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "EthTSyn",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/EthTSyn"
+        },
+        "CanTSyn_Init": {
+            "InitFunctions": "CanTSyn_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "CanTSyn",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/CanTSyn"
+        },
+        "Dem_Init": {
+            "InitFunctions": "Dem_Init",
+            "Init Phase": "INIT_THREE",
+            "BswModule": "Dem",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Dem"
+        },
+        "Crypto_Init": {
+            "InitFunctions": "Crypto_Init",
+            "Init Phase": "INIT_THREE",
+            "BswModule": "Crypto",
+            "EcuMModuleParameter": "VOID",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Crypto"
+        },
+        "FiM_Init": {
+            "InitFunctions": "FiM_Init",
+            "Init Phase": "INIT_THREE",
+            "BswModule": "FiM",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/FiM"
+        },
+        "Crc_Init": {
+            "InitFunctions": "Crc_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "Crc",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "BswM_Init": {
+            "InitFunctions": "BswM_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "BswM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "ComXf_Init": {
+            "InitFunctions": "ComXf_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "ComXf",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "EcuM_Init": {
+            "InitFunctions": "EcuM_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "EcuM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "SchM_Start": {
+            "InitFunctions": "SchM_Start",
+            "Init Phase": "NO_INIT",
+            "BswModule": "SchM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Rte_StartTiming": {
+            "InitFunctions": "Rte_StartTiming",
+            "Init Phase": "NO_INIT",
+            "BswModule": "Rte",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "SchM_StartTiming": {
+            "InitFunctions": "SchM_StartTiming",
+            "Init Phase": "NO_INIT",
+            "BswModule": "SchM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "SchM_Init": {
+            "InitFunctions": "SchM_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "SchM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "SomelpXf_Init": {
+            "InitFunctions": "SomelpXf_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "SomelpXf",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "vBaseEnv_Init": {
+            "InitFunctions": "vBaseEnv_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "vBaseEnv",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Mcallib_Init": {
+            "InitFunctions": "Mcallib_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "Mcallib",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "ResourceM": {
+            "InitFunctions": "ResourceM",
+            "Init Phase": "NO_INIT",
+            "BswModule": "ResourceM",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "Brs_Init": {
+            "InitFunctions": "Brs_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "Brs",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        },
+        "vLinkGen_Init": {
+            "InitFunctions": "vLinkGen_Init",
+            "Init Phase": "NO_INIT",
+            "BswModule": "vLinkGen",
+            "EcuMModuleParameter": "",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": ""
+        }
+    }
+}

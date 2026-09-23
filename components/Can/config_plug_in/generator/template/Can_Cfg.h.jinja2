@@ -1,0 +1,48 @@
+{{get_copyright()}}
+
+/*!*********************************************************************************************************************
+ * @file        Can_Cfg.h
+ * @brief       PC MCAL Can pre-compile configuration
+ * @details     Generated from Can ECUC (EcuBus-Pro JSON-RPC backend)
+ * @date        {{get_generation_time_temp()}}
+ * @toolversion {{get_vcos_version_temp()}}
+ **********************************************************************************************************************/
+
+#ifndef CAN_CFG_H
+#define CAN_CFG_H
+
+#include "Std_Types.h"
+
+#define CAN_VENDOR_ID                 (0u)
+#define CAN_MODULE_ID                 (80u)
+#define CAN_SW_MAJOR_VERSION          (1u)
+#define CAN_SW_MINOR_VERSION          (0u)
+#define CAN_SW_PATCH_VERSION          (0u)
+
+{%- set rpc = get_rpc_cfg() %}
+{%- set ctrls = get_controller_list() %}
+{%- set hohs = get_hoh_list() %}
+{%- set general = get_can_cfg().get("general", {}) %}
+
+#define CAN_DEV_ERROR_DETECT          {{"STD_ON" if general.get("dev_error_detect") else "STD_OFF"}}
+#define CAN_VERSION_INFO_API          {{"STD_ON" if general.get("version_info_api") else "STD_OFF"}}
+#define CAN_SET_BAUDRATE_API          {{"STD_ON" if general.get("set_baudrate_api") else "STD_OFF"}}
+
+#define CAN_CONTROLLER_NUM            {{ctrls|length}}u
+#define CAN_HOH_NUM                   {{hohs|length}}u
+
+#define CAN_RPC_HOST                  {{rpc["host"]|c_str}}
+#define CAN_RPC_PORT                  {{rpc["port"]}}u
+#define CAN_RPC_SOCKET_PATH           {{rpc["socket_path"]|c_str}}
+#define CAN_RPC_AUTO_RECONNECT        {{"STD_ON" if rpc.get("auto_reconnect", True) else "STD_OFF"}}
+#define CAN_RPC_RECONNECT_INTERVAL_MS {{rpc.get("reconnect_interval_ms", 500)}}u
+
+{% for ctrl in ctrls %}
+#define {{ctrl["name"]}}_ID           {{ctrl["controller_id"]}}u
+{%- endfor %}
+
+{% for hoh in hohs %}
+#define {{hoh["name"]}}               {{hoh["hoh_id"]}}u
+{%- endfor %}
+
+#endif /* CAN_CFG_H */

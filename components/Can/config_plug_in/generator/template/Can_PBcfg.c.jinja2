@@ -1,0 +1,73 @@
+{{get_copyright()}}
+
+/*!*********************************************************************************************************************
+ * @file        Can_PBcfg.c
+ * @brief       PC MCAL Can post-build configuration
+ * @details     Controllers / HOHs / EcuBus-Pro JSON-RPC connection
+ * @date        {{get_generation_time_temp()}}
+ * @toolversion {{get_vcos_version_temp()}}
+ **********************************************************************************************************************/
+
+#include "Can.h"
+
+{%- set rpc = get_rpc_cfg() %}
+{%- set ctrls = get_controller_list() %}
+{%- set hohs = get_hoh_list() %}
+
+const Can_RpcConfigType Can_RpcConfig = {
+    .host = {{rpc["host"]|c_str}},
+    .port = {{rpc["port"]}}u,
+    .socket_path = {{rpc["socket_path"]|c_str}},
+    .auto_reconnect = {{rpc.get("auto_reconnect", True)|c_bool}},
+    .reconnect_interval_ms = {{rpc.get("reconnect_interval_ms", 500)}}u
+};
+
+{% if ctrls|length > 0 %}
+const Can_ControllerConfigType Can_ControllerConfig[CAN_CONTROLLER_NUM] = {
+{%- for ctrl in ctrls %}
+    {
+        .controller_id = {{ctrl["controller_id"]}}u,
+        .activation = {{ctrl["activation"]|c_bool}},
+        .name = {{ctrl["name"]|c_str}},
+        .vendor = {{ctrl["vendor"]|c_str}},
+        .handle = {{ctrl["handle"]}}u,
+        .canfd = {{ctrl["canfd"]|c_bool}},
+        .bitrate_bps = {{ctrl["bitrate_bps"]}}u,
+        .fd_bitrate_bps = {{ctrl["fd_bitrate_bps"]}}u,
+        .brs = {{ctrl["brs"]|c_bool}},
+        .hardware_name = {{ctrl["hardware_name"]|c_str}},
+        .baud_id = {{ctrl["baud_id"]}}u
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+};
+{% else %}
+const Can_ControllerConfigType Can_ControllerConfig[1] = {{ "{{0}}" }};
+{% endif %}
+
+{% if hohs|length > 0 %}
+const Can_HardwareObjectConfigType Can_HardwareObjectConfig[CAN_HOH_NUM] = {
+{%- for hoh in hohs %}
+    {
+        .hoh_id = {{hoh["hoh_id"]}}u,
+        .controller_id = {{hoh["controller_id"]}}u,
+        .object_type = {{hoh["object_type_enum"]}},
+        .handle_type = {{hoh["handle_type_enum"]}},
+        .id_type = {{hoh["id_type_enum"]}},
+        .padding = {{hoh["padding"]}}u,
+        .has_filter = {{hoh["has_filter"]|c_bool}},
+        .filter_code = {{hoh["filter_code"]}}u,
+        .filter_mask = {{hoh["filter_mask"]}}u
+    }{% if not loop.last %},{% endif %}
+{%- endfor %}
+};
+{% else %}
+const Can_HardwareObjectConfigType Can_HardwareObjectConfig[1] = {{ "{{0}}" }};
+{% endif %}
+
+const Can_ConfigType Can_Config = {
+    .rpc = &Can_RpcConfig,
+    .controllers = Can_ControllerConfig,
+    .controller_count = CAN_CONTROLLER_NUM,
+    .hohs = Can_HardwareObjectConfig,
+    .hoh_count = CAN_HOH_NUM
+};

@@ -1,0 +1,11 @@
+menu "PC MCAL"
+
+config MODULE_CAN
+	bool "PC MCAL CAN (EcuBus-Pro JSON-RPC)"
+	default n
+	---help---
+		AUTOSAR Can driver for PC. Talks to EcuBus-Pro Simulate CAN
+		via JSON-RPC (starts when a project Simulate device is open;
+		default 127.0.0.1:17320).
+
+endmenu

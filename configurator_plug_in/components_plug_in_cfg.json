@@ -1,0 +1,476 @@
+{
+    "target": {
+        "PC_Common": {
+            "DERIVATIVE_GROUP": "PC",
+            "CPU_CORE": "X86",
+            "compiler": [
+                "vs20xx"
+            ],
+            "Os": {},
+            "MCAL_VERSION": [
+                "PC_MCAL_0.1.0"
+            ]
+        }
+    },
+    "validate": {
+        "ignore_option": {
+            "PC_Common": {
+                "Os": {
+                    "interrupt_priority_rule": 1,
+                    "max_interrupt_priority": 255,
+                    "max_cat0_interrupt_priority": 255,
+                    "max_tp_interrupt_priority": 254,
+                    "max_cat1_interrupt_priority": 253,
+                    "max_cat2_interrupt_priority": 240,
+                    "min_interrupt_priority": 1,
+                    "min_OsTaskStackSize": 128
+                }
+            }
+        }
+    },
+    "dbc_family": {
+        "CanNm": {
+            "NmAsrMessage": 1
+        },
+        "Nm": {
+            "NmAsrMessage": 1
+        },
+        "Com": {
+            "GenMsgILSupport": 1
+        },
+        "PduR": {
+            "GenMsgILSupport": 1
+        },
+        "CanIf": {
+            "GenMsgILSupport": 1
+        },
+        "EcuC": {
+            "GenMsgILSupport": 1
+        },
+        "ComM": {
+            "GenMsgILSupport": 1
+        },
+        "CanSM": {
+            "GenMsgILSupport": 1
+        },
+        "CanTp": null
+    },
+    "ldf_family": {
+        "EcuC": {},
+        "Com": {},
+        "PduR": {},
+        "LinIf": {},
+        "LinSM": {},
+        "ComM": {},
+        "Nm": {}
+    },
+    "cdd_family": {
+        "Dcm": {},
+        "Dem": {},
+        "NvM": {}
+    },
+    "level": {
+        "level0": [
+            "Os"
+        ],
+        "level1": [],
+        "level2": [],
+        "level3": []
+    },
+    "module_cfg": {
+        "Os": {
+            "group": [
+                "Timing"
+            ],
+            "dependency_list": [
+                "EcuC"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/rt_framework"
+        },
+        "MemPool": {
+            "group": [
+                "Memory"
+            ],
+            "dependency_list": [
+                "Os"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/memory/mempool"
+        },
+        "Rte": {
+            "group": [
+                "Timing"
+            ],
+            "dependency_list": [
+                "Os",
+                "EcuC"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/runtime/Rte"
+        },
+        "EcuC": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": false,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/runtime/EcuC"
+        },
+        "EthIf": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_dev/eth"
+        },
+        "TcpIp": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [
+                "EthIf"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_protocols/sockets"
+        },
+        "Memmap": {
+            "group": [
+                "Memory"
+            ],
+            "dependency_list": [
+                "Os",
+                "EcuC"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/memory/memmap"
+        },
+        "Det": {
+            "group": [
+                "Base Serivces"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": false,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/maintaining/det"
+        },
+        "MemIf": {
+            "group": [
+                "Memory"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": false,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/memory/memif"
+        },
+        "NvM": {
+            "group": [
+                "Memory"
+            ],
+            "dependency_list": [
+                "MemIf"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/memory/nvm"
+        },
+        "Dem": {
+            "group": [
+                "Diagnostics"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/diagnostics/service/dem"
+        },
+        "Dcm": {
+            "group": [
+                "Diagnostics"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/diagnostics/service/dcm"
+        },
+        "CanTp": {
+            "group": [
+                "Diagnostics"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/diagnostics/transport/cantp"
+        },
+        "Com": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/rt_com"
+        },
+        "PduR": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/pdu_router"
+        },
+        "Can": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "is_mcal": false,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../components/Can"
+        },
+        "CanIf": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [
+                "Can"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/communication/net_dev/canif"
+        },
+        "ComM": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_manager/comm"
+        },
+        "CanSM": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_manager/cansm"
+        },
+        "CanNm": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_manager/cannm"
+        },
+        "Nm": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/communication/net_manager/nm"
+        },
+        "EcuM": {
+            "group": [
+                "Mode Management"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/system_services/service_management/sysm_init"
+        },
+        "BswM": {
+            "group": [
+                "Mode Management"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": true,
+                "dynamic": true
+            },
+            "plug_in_path": "../../components/system_services/service_management/sysm_core"
+        },
+        "Isolate": {
+            "group": [
+                "Safety"
+            ],
+            "dependency_list": [
+                "Os",
+                "EcuC"
+            ],
+            "support_ui": true,
+            "support_validation": true,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/fusa/isolate"
+        },
+        "Cdd": {
+            "group": [
+                "Communication"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": false,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/communication/cdd"
+        },
+        "Crc": {
+            "group": [
+                "Mode Management"
+            ],
+            "dependency_list": [],
+            "support_ui": true,
+            "support_validation": false,
+            "support_generation": true,
+            "internal_behavior": {
+                "support": false,
+                "dynamic": false
+            },
+            "plug_in_path": "../../components/security/crc"
+        }
+    },
+    "no_repeat_ref": {
+        "EcuC": [
+            {
+                "base_path": "/AUTOSAR/EcucDefs/EcuC/EcucPartitionCollection",
+                "param_path": [
+                    "/AUTOSAR/EcucDefs/EcuC/EcucPartitionCollection/EcucPartition/EcucPartitionSoftwareComponentInstanceRef"
+                ]
+            }
+        ]
+    }
+}

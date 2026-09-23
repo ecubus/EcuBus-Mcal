@@ -1,0 +1,40 @@
+{
+    "CAN016001": {
+        "rule_name": "CAN016001",
+        "rule_type": "continuity_check",
+        "rule_summary": "Continuity check of CanControllerId.",
+        "rule_message": "/AUTOSAR/EcucDefs/Can/CanConfigSet/CanController/CanControllerId should start from 0 and increase continuously.",
+        "rule_ruleset": {
+            "mod_path": "/AUTOSAR/EcucDefs/Can/CanConfigSet/CanController/CanControllerId",
+            "base_path": "/AUTOSAR/EcucDefs/Can/CanConfigSet"
+        },
+        "auto_solve_list": [
+            {
+                "solve_info": "Repopulate CanControllerId values automatically.",
+                "solve_type": "Repopulate_value",
+                "parameter": "/AUTOSAR/EcucDefs/Can/CanConfigSet",
+                "value": ""
+            }
+        ],
+        "manual_solve_list": []
+    },
+    "CAN016002": {
+        "rule_name": "CAN016002",
+        "rule_type": "continuity_check",
+        "rule_summary": "Continuity check of CanObjectId.",
+        "rule_message": "/AUTOSAR/EcucDefs/Can/CanConfigSet/CanHardwareObject/CanObjectId should start from 0 and increase continuously.",
+        "rule_ruleset": {
+            "mod_path": "/AUTOSAR/EcucDefs/Can/CanConfigSet/CanHardwareObject/CanObjectId",
+            "base_path": "/AUTOSAR/EcucDefs/Can/CanConfigSet"
+        },
+        "auto_solve_list": [
+            {
+                "solve_info": "Repopulate CanObjectId values automatically.",
+                "solve_type": "Repopulate_value",
+                "parameter": "/AUTOSAR/EcucDefs/Can/CanConfigSet",
+                "value": ""
+            }
+        ],
+        "manual_solve_list": []
+    }
+}

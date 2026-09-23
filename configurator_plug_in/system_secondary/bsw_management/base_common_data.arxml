@@ -1,0 +1,995 @@
+<?xml version="1.0" ?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="91db08e1-441d-4c87-8019-84b9b5e34800">
+          <SHORT-NAME>BswM</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR/EcucDefs/BswM</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <MODULE-DESCRIPTION-REF DEST="BSW-IMPLEMENTATION">/AUTOSAR/EcucDefs/BswM_Impl</MODULE-DESCRIPTION-REF>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE>
+              <SHORT-NAME>BswMGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMCanSMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMCanSMIcomEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMComMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMDcmEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMDevErrorDetect</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMEcuMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMEthIfEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMEthSMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMFrSMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMGenericRequestEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMJ1939DcmEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMJ1939NmEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMLinSMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMLinTPEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMNmEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMNvMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMSchMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMSdEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMVersionInfoApi</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMWdgMEnabled</DEFINITION-REF>
+                  <VALUE>false</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMMainFunctionPeriod</DEFINITION-REF>
+                  <VALUE>0.01</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="89906af7-9d90-4183-91ff-3102bad730b3">
+                  <SHORT-NAME>BswMCommonData</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="VCOS2:BswM">
+                        <SDG GID="VCOS2:Statemachines">
+                          <SDG GID="VCOS2:INIT">
+                            <SDG GID="VCOS2:Feature:NvMReadAll">
+                              <SD GID="VCOS2:Name">Execute NvM ReadAll</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                            </SDG>
+                            <SDG GID="VCOS2:Feature:EnableInterrupts">
+                              <SD GID="VCOS2:Name">Enable Interrupts</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                            </SDG>
+                            <SDG GID="VCOS2:Feature:InitKnownModules">
+                              <SD GID="VCOS2:Name">Initialize known modules</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                              <SDG GID="VCOS2:Param:PARAMETER:Restore_Default_Sequence">
+                                <SD GID="VCOS2:Name">Restore Default Sequence</SD>
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:INIT_ZERO">
+                                <SD GID="VCOS2:Name">InitPhase: INIT_ZERO</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SDG GID="VCOS2:Feature:Det_Init">
+                                  <SD GID="VCOS2:Name">Det_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Det</SD>
+                                  <SDG GID="VCOS2:Param:Det_Init_Function">
+                                    <SD GID="VCOS2:Name">Det_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Det_Init(Det_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Det_Init(Det_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Det_Init_Header">
+                                    <SD GID="VCOS2:Name">Det_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Det.h</SD>
+                                    <SD GID="VCOS2:Value">Det.h</SD>
+                                  </SDG>
+                                </SDG>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:INIT_ONE">
+                                <SD GID="VCOS2:Name">InitPhase: INIT_ONE</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SDG GID="VCOS2:Feature:Mcu_Init">
+                                  <SD GID="VCOS2:Name">Mcu_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Mcu</SD>
+                                  <SDG GID="VCOS2:Param:Mcu_Init_Function">
+                                    <SD GID="VCOS2:Name">Mcu_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Mcu_InitClock(0);while (MCU_PLL_LOCKED != Mcu_GetPllStatus());Mcu_DistributePllClock();</SD>
+                                    <SD GID="VCOS2:Value">Mcu_InitClock(0);while (MCU_PLL_LOCKED != Mcu_GetPllStatus());Mcu_DistributePllClock();</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Mcu_Init_Header">
+                                    <SD GID="VCOS2:Name">Mcu_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Mcu.h</SD>
+                                    <SD GID="VCOS2:Value">Mcu.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Port_Init">
+                                  <SD GID="VCOS2:Name">Port_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Port</SD>
+                                  <SDG GID="VCOS2:Param:Port_Init_Function">
+                                    <SD GID="VCOS2:Name">Port_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Port_Init(&amp;Port_Config)</SD>
+                                    <SD GID="VCOS2:Value">Port_Init(&amp;Port_Config)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Port_Init_Header">
+                                    <SD GID="VCOS2:Name">Port_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Port.h</SD>
+                                    <SD GID="VCOS2:Value">Port.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Dma_Init">
+                                  <SD GID="VCOS2:Name">Dma_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Dma</SD>
+                                  <SDG GID="VCOS2:Param:Dma_Init_Function">
+                                    <SD GID="VCOS2:Name">Dma_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Dma_Init(&amp;Dma_Config)</SD>
+                                    <SD GID="VCOS2:Value">Dma_Init(&amp;Dma_Config)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Dma_Init_Header">
+                                    <SD GID="VCOS2:Name">Dma_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Dma.h</SD>
+                                    <SD GID="VCOS2:Value">Dma.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:E2EXf_Init">
+                                  <SD GID="VCOS2:Name">E2EXf_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">E2EXf</SD>
+                                  <SDG GID="VCOS2:Param:E2EXf_Init_Function">
+                                    <SD GID="VCOS2:Name">E2EXf_Init Function</SD>
+                                    <SD GID="VCOS2:Default">E2EXf_Init(NULL_PTR)</SD>
+                                    <SD GID="VCOS2:Value">E2EXf_Init(NULL_PTR)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:E2EXf_Init_Header">
+                                    <SD GID="VCOS2:Name">E2EXf_Init Header</SD>
+                                    <SD GID="VCOS2:Default">E2EXf.h</SD>
+                                    <SD GID="VCOS2:Value">E2EXf.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Fls_17_Dmu_Init">
+                                  <SD GID="VCOS2:Name">Fls_17_Dmu_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Fls</SD>
+                                  <SDG GID="VCOS2:Param:Fls_17_Dmu_Init_Function">
+                                    <SD GID="VCOS2:Name">Fls_17_Dmu_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Fls_17_Dmu_Init(&amp;Fls_17_Dmu_Config)</SD>
+                                    <SD GID="VCOS2:Value">Fls_17_Dmu_Init(&amp;Fls_17_Dmu_Config)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Fls_17_Dmu_Init_Header">
+                                    <SD GID="VCOS2:Name">Fls_17_Dmu_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Fls_17_Dmu.h</SD>
+                                    <SD GID="VCOS2:Value">Fls_17_Dmu.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Spi_Init">
+                                  <SD GID="VCOS2:Name">Spi_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Spi</SD>
+                                  <SDG GID="VCOS2:Param:Spi_Init_Function">
+                                    <SD GID="VCOS2:Name">Spi_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Spi_Init(&amp;Spi_Config)</SD>
+                                    <SD GID="VCOS2:Value">Spi_Init(&amp;Spi_Config)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Spi_Init_Header">
+                                    <SD GID="VCOS2:Name">Spi_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Spi.h</SD>
+                                    <SD GID="VCOS2:Value">Spi.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:BrsHw_EnableHwAccess">
+                                  <SD GID="VCOS2:Name">BrsHw_EnableHwAccess</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">BrsHw</SD>
+                                  <SDG GID="VCOS2:Param:BrsHw_EnableHwAccess_Function">
+                                    <SD GID="VCOS2:Name">BrsHw_EnableHwAccess Function</SD>
+                                    <SD GID="VCOS2:Default">BrsHw_EnableHwAccess()</SD>
+                                    <SD GID="VCOS2:Value">BrsHw_EnableHwAccess()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:BrsHw_EnableHwAccess_Header">
+                                    <SD GID="VCOS2:Name">BrsHw_EnableHwAccess Header</SD>
+                                    <SD GID="VCOS2:Default">BrsHw.h</SD>
+                                    <SD GID="VCOS2:Value">BrsHw.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Fee_Init">
+                                  <SD GID="VCOS2:Name">Fee_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Fee</SD>
+                                  <SDG GID="VCOS2:Param:Fee_Init_Function">
+                                    <SD GID="VCOS2:Name">Fee_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Fee_Init(&amp;Fee_Config)</SD>
+                                    <SD GID="VCOS2:Value">Fee_Init(&amp;Fee_Config)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Fee_Init_Header">
+                                    <SD GID="VCOS2:Name">Fee_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Fee.h</SD>
+                                    <SD GID="VCOS2:Value">Fee.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Dem_PreInit">
+                                  <SD GID="VCOS2:Name">Dem_PreInit</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Dem</SD>
+                                  <SDG GID="VCOS2:Param:Dem_PreInit_Function">
+                                    <SD GID="VCOS2:Name">Dem_PreInit Function</SD>
+                                    <SD GID="VCOS2:Default">Dem_PreInit(Dem_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Dem_PreInit(Dem_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Dem_PreInit_Header">
+                                    <SD GID="VCOS2:Name">Dem_PreInit Header</SD>
+                                    <SD GID="VCOS2:Default">Dem.h</SD>
+                                    <SD GID="VCOS2:Value">Dem.h</SD>
+                                  </SDG>
+                                </SDG>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:INIT_TWO">
+                                <SD GID="VCOS2:Name">InitPhase: INIT_TWO</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SDG GID="VCOS2:Feature:Tja1145_Init">
+                                  <SD GID="VCOS2:Name">Tja1145_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Tja1145</SD>
+                                  <SDG GID="VCOS2:Param:Tja1145_Init_Function">
+                                    <SD GID="VCOS2:Name">Tja1145_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Tja1145_Init(Tja1145_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Tja1145_Init(Tja1145_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Tja1145_Init_Header">
+                                    <SD GID="VCOS2:Name">Tja1145_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Tja1145.h</SD>
+                                    <SD GID="VCOS2:Value">Tja1145.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Can_Init">
+                                  <SD GID="VCOS2:Name">Can_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Can</SD>
+                                  <SDG GID="VCOS2:Param:Can_Init_Function">
+                                    <SD GID="VCOS2:Name">Can_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Can_Init(Can_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Can_Init(Can_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Can_Init_Header">
+                                    <SD GID="VCOS2:Name">Can_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Can.h</SD>
+                                    <SD GID="VCOS2:Value">Can.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Lin_Init">
+                                  <SD GID="VCOS2:Name">Lin_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Lin</SD>
+                                  <SDG GID="VCOS2:Param:Lin_Init_Function">
+                                    <SD GID="VCOS2:Name">Lin_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Lin_Init(Lin_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Lin_Init(Lin_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Lin_Init_Header">
+                                    <SD GID="VCOS2:Name">Lin_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Lin.h</SD>
+                                    <SD GID="VCOS2:Value">Lin.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Eth_Init">
+                                  <SD GID="VCOS2:Name">Eth_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Eth</SD>
+                                  <SDG GID="VCOS2:Param:Eth_Init_Function">
+                                    <SD GID="VCOS2:Name">Eth_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Eth_Init(Eth_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Eth_Init(Eth_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Eth_Init_Header">
+                                    <SD GID="VCOS2:Name">Eth_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Eth.h</SD>
+                                    <SD GID="VCOS2:Value">Eth.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanIf_Init">
+                                  <SD GID="VCOS2:Name">CanIf_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CanIf</SD>
+                                  <SDG GID="VCOS2:Param:CanIf_Init_Function">
+                                    <SD GID="VCOS2:Name">CanIf_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanIf_Init(CanIf_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">CanIf_Init(CanIf_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanIf_Init_Header">
+                                    <SD GID="VCOS2:Name">CanIf_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanIf.h</SD>
+                                    <SD GID="VCOS2:Value">CanIf.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CryIf_Init">
+                                  <SD GID="VCOS2:Name">CryIf_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CryIf</SD>
+                                  <SDG GID="VCOS2:Param:CryIf_Init_Function">
+                                    <SD GID="VCOS2:Name">CryIf_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CryIf_Init()</SD>
+                                    <SD GID="VCOS2:Value">CryIf_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CryIf_Init_Header">
+                                    <SD GID="VCOS2:Name">CryIf_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CryIf.h</SD>
+                                    <SD GID="VCOS2:Value">CryIf.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:LinIf_Init">
+                                  <SD GID="VCOS2:Name">LinIf_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">LinIf</SD>
+                                  <SDG GID="VCOS2:Param:LinIf_Init_Function">
+                                    <SD GID="VCOS2:Name">LinIf_Init Function</SD>
+                                    <SD GID="VCOS2:Default">LinIf_Init(LinIf_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">LinIf_Init(LinIf_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:LinIf_Init_Header">
+                                    <SD GID="VCOS2:Name">LinIf_Init Header</SD>
+                                    <SD GID="VCOS2:Default">LinIf.h</SD>
+                                    <SD GID="VCOS2:Value">LinIf.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:EthIf_Init">
+                                  <SD GID="VCOS2:Name">EthIf_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">EthIf</SD>
+                                  <SDG GID="VCOS2:Param:EthIf_Init_Function">
+                                    <SD GID="VCOS2:Name">EthIf_Init Function</SD>
+                                    <SD GID="VCOS2:Default">EthIf_Init(EthIf_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">EthIf_Init(EthIf_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:EthIf_Init_Header">
+                                    <SD GID="VCOS2:Name">EthIf_Init Header</SD>
+                                    <SD GID="VCOS2:Default">EthIf.h</SD>
+                                    <SD GID="VCOS2:Value">EthIf.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:SoAd_Init">
+                                  <SD GID="VCOS2:Name">SoAd_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">SoAd</SD>
+                                  <SDG GID="VCOS2:Param:SoAd_Init_Function">
+                                    <SD GID="VCOS2:Name">SoAd_Init Function</SD>
+                                    <SD GID="VCOS2:Default">SoAd_Init(SoAd_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">SoAd_Init(SoAd_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:SoAd_Init_Header">
+                                    <SD GID="VCOS2:Name">SoAd_Init Header</SD>
+                                    <SD GID="VCOS2:Default">SoAd.h</SD>
+                                    <SD GID="VCOS2:Value">SoAd.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:WdgM_Init">
+                                  <SD GID="VCOS2:Name">WdgM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">WdgM</SD>
+                                  <SDG GID="VCOS2:Param:WdgM_Function">
+                                    <SD GID="VCOS2:Name">WdgM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">WdgM_Init(&amp;WdgMConfig_Mode0_core0)</SD>
+                                    <SD GID="VCOS2:Value">WdgM_Init(&amp;WdgMConfig_Mode0_core0)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:WdgM_Init_Header">
+                                    <SD GID="VCOS2:Name">WdgM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">WdgM.h</SD>
+                                    <SD GID="VCOS2:Value">WdgM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Com_Init">
+                                  <SD GID="VCOS2:Name">Com_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Com</SD>
+                                  <SDG GID="VCOS2:Param:Com_Init_Function">
+                                    <SD GID="VCOS2:Name">Com_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Com_Init(Com_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Com_Init(Com_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Com_Init_Header">
+                                    <SD GID="VCOS2:Name">Com_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Com.h</SD>
+                                    <SD GID="VCOS2:Value">Com.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:PduR_Init">
+                                  <SD GID="VCOS2:Name">PduR_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">PduR</SD>
+                                  <SDG GID="VCOS2:Param:PduR_Init_Function">
+                                    <SD GID="VCOS2:Name">PduR_Init Function</SD>
+                                    <SD GID="VCOS2:Default">PduR_Init(PduR_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">PduR_Init(PduR_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:PduR_Init_Header">
+                                    <SD GID="VCOS2:Name">PduR_Init Header</SD>
+                                    <SD GID="VCOS2:Default">PduR.h</SD>
+                                    <SD GID="VCOS2:Value">PduR.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanSM_Init">
+                                  <SD GID="VCOS2:Name">CanSM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CanSM</SD>
+                                  <SDG GID="VCOS2:Param:CanSM_Init_Function">
+                                    <SD GID="VCOS2:Name">CanSM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanSM_Init(CanSM_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">CanSM_Init(CanSM_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanSM_Init_Header">
+                                    <SD GID="VCOS2:Name">CanSM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanSM_EcuM.h</SD>
+                                    <SD GID="VCOS2:Value">CanSM_EcuM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:LinSM_Init">
+                                  <SD GID="VCOS2:Name">LinSM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">LinSM</SD>
+                                  <SDG GID="VCOS2:Param:LinSM_Init_Function">
+                                    <SD GID="VCOS2:Name">LinSM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">LinSM_Init(LinSM_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">LinSM_Init(LinSM_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:LinSM_Init_Header">
+                                    <SD GID="VCOS2:Name">LinSM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">LinSM.h</SD>
+                                    <SD GID="VCOS2:Value">LinSM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:EthSM_Init">
+                                  <SD GID="VCOS2:Name">EthSM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">EthSM</SD>
+                                  <SDG GID="VCOS2:Param:EthSM_Init_Function">
+                                    <SD GID="VCOS2:Name">EthSM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">EthSM_Init(EthSM_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">EthSM_Init(EthSM_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:EthSM_Init_Header">
+                                    <SD GID="VCOS2:Name">EthSM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">EthSM.h</SD>
+                                    <SD GID="VCOS2:Value">EthSM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanNm_Init">
+                                  <SD GID="VCOS2:Name">CanNm_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CanNm</SD>
+                                  <SDG GID="VCOS2:Param:CanNm_Init_Function">
+                                    <SD GID="VCOS2:Name">CanNm_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanNm_Init(CanNm_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">CanNm_Init(CanNm_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanNm_Init_Header">
+                                    <SD GID="VCOS2:Name">CanNm_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanNm.h</SD>
+                                    <SD GID="VCOS2:Value">CanNm.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Nm_Init">
+                                  <SD GID="VCOS2:Name">Nm_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Nm</SD>
+                                  <SDG GID="VCOS2:Param:Nm_Init_Function">
+                                    <SD GID="VCOS2:Name">Nm_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Nm_Init(Nm_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Nm_Init(Nm_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Nm_Init_Header">
+                                    <SD GID="VCOS2:Name">Nm_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Nm.h</SD>
+                                    <SD GID="VCOS2:Value">Nm.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanTp_Init">
+                                  <SD GID="VCOS2:Name">CanTp_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CanTp</SD>
+                                  <SDG GID="VCOS2:Param:CanTp_Init_Function">
+                                    <SD GID="VCOS2:Name">CanTp_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanTp_Init(CanTp_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">CanTp_Init(CanTp_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanTp_Init_Header">
+                                    <SD GID="VCOS2:Name">CanTp_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanTp.h</SD>
+                                    <SD GID="VCOS2:Value">CanTp.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:LinTp_Init">
+                                  <SD GID="VCOS2:Name">LinTp_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">LinTp</SD>
+                                  <SDG GID="VCOS2:Param:LinTp_Init_Function">
+                                    <SD GID="VCOS2:Name">LinTp_Init Function</SD>
+                                    <SD GID="VCOS2:Default">LinTp_Init(LinTp_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">LinTp_Init(LinTp_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:LinTp_Init_Header">
+                                    <SD GID="VCOS2:Name">LinTp_Init Header</SD>
+                                    <SD GID="VCOS2:Default">LinTp.h</SD>
+                                    <SD GID="VCOS2:Value">LinTp.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:DoIP_Init">
+                                  <SD GID="VCOS2:Name">DoIP_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">DoIP</SD>
+                                  <SDG GID="VCOS2:Param:DoIP_Init_Function">
+                                    <SD GID="VCOS2:Name">DoIP_Init Function</SD>
+                                    <SD GID="VCOS2:Default">DoIP_Init(DoIP_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">DoIP_Init(DoIP_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:DoIP_Init_Header">
+                                    <SD GID="VCOS2:Name">DoIP_Init Header</SD>
+                                    <SD GID="VCOS2:Default">DoIP.h</SD>
+                                    <SD GID="VCOS2:Value">DoIP.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanXcp_Init">
+                                  <SD GID="VCOS2:Name">CanXcp_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Xcp</SD>
+                                  <SDG GID="VCOS2:Param:CanXcp_Init_Function">
+                                    <SD GID="VCOS2:Name">CanXcp_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanXcp_Init(NULL_PTR)</SD>
+                                    <SD GID="VCOS2:Value">CanXcp_Init(NULL_PTR)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanXcp_Init_Header">
+                                    <SD GID="VCOS2:Name">CanXcp_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanXcp.h</SD>
+                                    <SD GID="VCOS2:Value">CanXcp.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Xcp_Init">
+                                  <SD GID="VCOS2:Name">Xcp_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Xcp</SD>
+                                  <SDG GID="VCOS2:Param:Xcp_Init_Function">
+                                    <SD GID="VCOS2:Name">Xcp_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Xcp_Init()</SD>
+                                    <SD GID="VCOS2:Value">Xcp_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Xcp_Init_Header">
+                                    <SD GID="VCOS2:Name">Xcp_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Xcp.h</SD>
+                                    <SD GID="VCOS2:Value">Xcp.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:EthTSyn_Init">
+                                  <SD GID="VCOS2:Name">EthTSyn_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">EthTSyn</SD>
+                                  <SDG GID="VCOS2:Param:EthTSyn_Init">
+                                    <SD GID="VCOS2:Name">EthTSyn_Init Function</SD>
+                                    <SD GID="VCOS2:Default">EthTSyn_Init(EthTSyn_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">EthTSyn_Init(EthTSyn_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:EthTSyn_Init_Header">
+                                    <SD GID="VCOS2:Name">EthTSyn_Init Header</SD>
+                                    <SD GID="VCOS2:Default">EthTSyn.h</SD>
+                                    <SD GID="VCOS2:Value">EthTSyn.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:NvM_Init">
+                                  <SD GID="VCOS2:Name">NvM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">NvM</SD>
+                                  <SDG GID="VCOS2:Param:NvM_Init_Function">
+                                    <SD GID="VCOS2:Name">NvM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">NvM_Init()</SD>
+                                    <SD GID="VCOS2:Value">NvM_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:NvM_Init_Header">
+                                    <SD GID="VCOS2:Name">NvM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">NvM.h</SD>
+                                    <SD GID="VCOS2:Value">NvM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:CanTSyn_Init">
+                                  <SD GID="VCOS2:Name">CanTSyn_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">CanTSyn</SD>
+                                  <SDG GID="VCOS2:Param:CanTSyn_Init_Function">
+                                    <SD GID="VCOS2:Name">CanTSyn_Init Function</SD>
+                                    <SD GID="VCOS2:Default">CanTSyn_Init(CanTSyn_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">CanTSyn_Init(CanTSyn_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:CanTSyn_Init_Header">
+                                    <SD GID="VCOS2:Name">CanTSyn_Init Header</SD>
+                                    <SD GID="VCOS2:Default">CanTSyn.h</SD>
+                                    <SD GID="VCOS2:Value">CanTSyn.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:StbM_Init">
+                                  <SD GID="VCOS2:Name">StbM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">StbM</SD>
+                                  <SDG GID="VCOS2:Param:StbM_Init_Function">
+                                    <SD GID="VCOS2:Name">StbM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">StbM_Init(StbM_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">StbM_Init(StbM_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:StbM_Init_Header">
+                                    <SD GID="VCOS2:Name">StbM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">StbM.h</SD>
+                                    <SD GID="VCOS2:Value">StbM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Csm_Init">
+                                  <SD GID="VCOS2:Name">Csm_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Csm</SD>
+                                  <SDG GID="VCOS2:Param:Csm_Init_Function">
+                                    <SD GID="VCOS2:Name">Csm_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Csm_Init()</SD>
+                                    <SD GID="VCOS2:Value">Csm_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Csm_Init_Header">
+                                    <SD GID="VCOS2:Name">Csm_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Csm.h</SD>
+                                    <SD GID="VCOS2:Value">Csm.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:ComM_Init">
+                                  <SD GID="VCOS2:Name">ComM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">ComM</SD>
+                                  <SDG GID="VCOS2:Param:ComM_Init_Function">
+                                    <SD GID="VCOS2:Name">ComM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">ComM_Init(ComM_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">ComM_Init(ComM_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:ComM_Init_Header">
+                                    <SD GID="VCOS2:Name">ComM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">ComM.h</SD>
+                                    <SD GID="VCOS2:Value">ComM.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Dlt_Init">
+                                  <SD GID="VCOS2:Name">Dlt_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Dlt</SD>
+                                  <SDG GID="VCOS2:Param:Dlt_Init_Function">
+                                    <SD GID="VCOS2:Name">Dlt_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Dlt_Init(NULL_PTR)</SD>
+                                    <SD GID="VCOS2:Value">Dlt_Init(NULL_PTR)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:ComM_Init_Header">
+                                    <SD GID="VCOS2:Name">Dlt_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Dlt.h</SD>
+                                    <SD GID="VCOS2:Value">Dlt.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Dcm_Init">
+                                  <SD GID="VCOS2:Name">Dcm_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Dcm</SD>
+                                  <SDG GID="VCOS2:Param:Dcm_Init_Function">
+                                    <SD GID="VCOS2:Name">Dcm_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Dcm_Init(NULL_PTR)</SD>
+                                    <SD GID="VCOS2:Value">Dcm_Init(NULL_PTR)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Dcm_Init_Header">
+                                    <SD GID="VCOS2:Name">Dcm_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Dcm.h</SD>
+                                    <SD GID="VCOS2:Value">Dcm.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Dem_Init">
+                                  <SD GID="VCOS2:Name">Dem_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Dem</SD>
+                                  <SDG GID="VCOS2:Param:Dem_Init_Function">
+                                    <SD GID="VCOS2:Name">Dem_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Dem_Init(Dem_Config_Ptr)</SD>
+                                    <SD GID="VCOS2:Value">Dem_Init(Dem_Config_Ptr)</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Dem_Init_Header">
+                                    <SD GID="VCOS2:Name">Dem_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Dem.h</SD>
+                                    <SD GID="VCOS2:Value">Dem.h</SD>
+                                  </SDG>
+                                </SDG>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:INIT_THREE">
+                                <SD GID="VCOS2:Name">InitPhase: INIT_THREE</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SDG GID="VCOS2:Feature:Rte_Start">
+                                  <SD GID="VCOS2:Name">Rte_Start</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Rte</SD>
+                                  <SDG GID="VCOS2:Param:Rte_Start_Function">
+                                    <SD GID="VCOS2:Name">Rte_Start Function</SD>
+                                    <SD GID="VCOS2:Default">Rte_Start()</SD>
+                                    <SD GID="VCOS2:Value">Rte_Start()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Rte_Start_Header">
+                                    <SD GID="VCOS2:Name">Rte_Start Header</SD>
+                                    <SD GID="VCOS2:Default">Rte_Main.h</SD>
+                                    <SD GID="VCOS2:Value">Rte_Main.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:Crypto_Init">
+                                  <SD GID="VCOS2:Name">Crypto_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Crypto</SD>
+                                  <SDG GID="VCOS2:Param:Crypto_Init_Function">
+                                    <SD GID="VCOS2:Name">Crypto_Init Function</SD>
+                                    <SD GID="VCOS2:Default">Crypto_Init()</SD>
+                                    <SD GID="VCOS2:Value">Crypto_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:Crypto_Init_Header">
+                                    <SD GID="VCOS2:Name">Crypto_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Crypto.h</SD>
+                                    <SD GID="VCOS2:Value">Crypto.h</SD>
+                                  </SDG>
+                                </SDG>
+                                <SDG GID="VCOS2:Feature:FiM_Init">
+                                  <SD GID="VCOS2:Name">FiM_Init</SD>
+                                  <SD GID="VCOS2:Value">FALSE</SD>
+                                  <SD GID="VCOS2:BswModule">Fim</SD>
+                                  <SDG GID="VCOS2:Param:FiM_Init_Function">
+                                    <SD GID="VCOS2:Name">FiM_Init Function</SD>
+                                    <SD GID="VCOS2:Default">FiM_Init()</SD>
+                                    <SD GID="VCOS2:Value">FiM_Init()</SD>
+                                  </SDG>
+                                  <SDG GID="VCOS2:Param:FiM_Init_Header">
+                                    <SD GID="VCOS2:Name">FiM_Init Header</SD>
+                                    <SD GID="VCOS2:Default">Fim.h</SD>
+                                    <SD GID="VCOS2:Value">Fim.h</SD>
+                                  </SDG>
+                                </SDG>
+                              </SDG>
+                            </SDG>
+                            <SDG GID="VCOS2:Feature:InitForeignModules">
+                              <SD GID="VCOS2:Name">Initialize foreign modules</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                              <SDG GID="VCOS2:Feature:MemMap_Init">
+                                <SD GID="VCOS2:Name">MemMap_Init</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SD GID="VCOS2:BswModule">MemMap</SD>
+                                <SDG GID="VCOS2:Param:MemMap_Init_Function">
+                                  <SD GID="VCOS2:Name">MemMap_Init Function</SD>
+                                  <SD GID="VCOS2:Default">MemMap_Init(NULL_PTR)</SD>
+                                  <SD GID="VCOS2:Value">MemMap_Init(NULL_PTR)</SD>
+                                </SDG>
+                                <SDG GID="VCOS2:Param:MemMap_Init_Header">
+                                  <SD GID="VCOS2:Name">MemMap_Init Header</SD>
+                                  <SD GID="VCOS2:Default">MemMap.h</SD>
+                                  <SD GID="VCOS2:Value">MemMap.h</SD>
+                                </SDG>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:ResourceM_Init">
+                                <SD GID="VCOS2:Name">ResourceM_Init</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SD GID="VCOS2:BswModule">ResourceM</SD>
+                                <SDG GID="VCOS2:Param:ResourceM_Init_Function">
+                                  <SD GID="VCOS2:Name">ResourceM_Init Function</SD>
+                                  <SD GID="VCOS2:Default">ResourceM_Init(NULL_PTR)</SD>
+                                  <SD GID="VCOS2:Value">ResourceM_Init(NULL_PTR)</SD>
+                                </SDG>
+                                <SDG GID="VCOS2:Param:ResourceM_Init_Header">
+                                  <SD GID="VCOS2:Name">ResourceM_Init Header</SD>
+                                  <SD GID="VCOS2:Default">ResourceM.h</SD>
+                                  <SD GID="VCOS2:Value">ResourceM.h</SD>
+                                </SDG>
+                              </SDG>
+                            </SDG>
+                          </SDG>
+                          <SDG GID="VCOS2:ESH">
+                            <SDG GID="VCOS2:Feature:ECU_State_Machine">
+                              <SD GID="VCOS2:Name">ECU State Machine</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                              <SDG GID="VCOS2:Param:Self_Run_Request_Timeout">
+                                <SD GID="VCOS2:Name">Self Run Request Timeout</SD>
+                                <SD GID="VCOS2:Default">0.1</SD>
+                                <SD GID="VCOS2:Value">0.1</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:Run_User">
+                                <SD GID="VCOS2:Name">Number of Run Request User</SD>
+                                <SD GID="VCOS2:Default">0</SD>
+                                <SD GID="VCOS2:Value">2</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:PostRun_User">
+                                <SD GID="VCOS2:Name">Number of PostRun Request User</SD>
+                                <SD GID="VCOS2:Default">0</SD>
+                                <SD GID="VCOS2:Value">2</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:Kill_All_Run_Request_Port">
+                                <SD GID="VCOS2:Name">Kill All Run Request Port</SD>
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Dem_Handling">
+                                <SD GID="VCOS2:Name">Dem Handling</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Support_ComM">
+                                <SD GID="VCOS2:Name">Support ComM</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:NvM_Handling">
+                                <SD GID="VCOS2:Name">NvM Handling</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                                <SDG GID="VCOS2:Param:NvM_Write_All_Timeout">
+                                  <SD GID="VCOS2:Name">NvM Write All Timeout</SD>
+                                  <SD GID="VCOS2:Default">60</SD>
+                                  <SD GID="VCOS2:Value">60</SD>
+                                </SDG>
+                                <SDG GID="VCOS2:Param:NvM_Cancel_Write_All_Timeout">
+                                  <SD GID="VCOS2:Name">NvM Cancel Write All Timeout</SD>
+                                  <SD GID="VCOS2:Default">60</SD>
+                                  <SD GID="VCOS2:Value">60</SD>
+                                </SDG>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Rte_Mode_Synchronization">
+                                <SD GID="VCOS2:Name">Rte Mode Synchronization</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Enable_Callouts">
+                                <SD GID="VCOS2:Name">Enable Callouts</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:EcuM_Mode_Handling">
+                                <SD GID="VCOS2:Name">EcuM Mode Handling</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                            </SDG>
+                          </SDG>
+                          <SDG GID="VCOS2:Communication">
+                            <SDG GID="VCOS2:Feature:test_channel">
+                              <SD GID="VCOS2:Name">test_channel</SD>
+                              <SD GID="VCOS2:Value">FALSE</SD>
+                              <SDG GID="VCOS2:Param:ReInitialize_TX">
+                                <SD GID="VCOS2:Name">ReInitialize TX</SD>
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:ReInitialize_RX">
+                                <SD GID="VCOS2:Name">ReInitialize RX</SD>
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_ENABLE_RX_DISABLE_TX_NORM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_ENABLE_TX_NORM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_TX_NORMAL">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_ENABLE_RX_DISABLE_TX_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_ENABLE_TX_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_TX_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_ENABLE_RX_DISABLE_TX_NORM_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_ENABLE_TX_NORM_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:DCM_DISABLE_RX_TX_NORM_NM">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:NM_STATE_BUS_OFF">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:NM_STATE_CHECK_WAKEUP">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:NM_STATE_WAIT_STARTUP">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:NM_STATE_BUS_SLEEP">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Param:NM_STATE_PREPARE_BUS_SLEEP">
+                                <SD GID="VCOS2:Default">false</SD>
+                                <SD GID="VCOS2:Value">false</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Nm Communication">
+                                <SD GID="VCOS2:Name">Nm Communication</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Group:test_group_Tx">
+                                <SD GID="VCOS2:Name">Group:test_group_Tx</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                              <SDG GID="VCOS2:Feature:Group:test_group_Rx">
+                                <SD GID="VCOS2:Name">Group:test_group_Rx</SD>
+                                <SD GID="VCOS2:Value">FALSE</SD>
+                              </SDG>
+                            </SDG>
+                          </SDG>
+                        </SDG>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/BswM/BswMGeneral/BswMCommonData</DEFINITION-REF>
+                </ECUC-CONTAINER-VALUE>
+            </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

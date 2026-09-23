@@ -1,0 +1,17 @@
+{
+    "init_function_settings": {
+        "Can_Init": {
+            "InitFunctions": "Can_Init",
+            "Init Phase": "INIT_TWO",
+            "BswModule": "Can",
+            "EcuMModuleParameter": "POSTBUILD_PTR",
+            "EcuMAdditionalInitCode": "",
+            "EcuMMoudleHeader": "Can.h",
+            "EcuMModuleService": "",
+            "EcuMModuleRef": "/ActiveEcuC/Can",
+            "ConfigPtrName": "&Can_Config",
+            "ConfigPtrClass": "AUTOMATIC",
+            "ConfigPtrType": "Can_ConfigType"
+        }
+    }
+}

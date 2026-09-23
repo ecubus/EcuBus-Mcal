@@ -1,0 +1,17 @@
+{
+    "Can": {
+        "group": [
+            "Communication"
+        ],
+        "dependency_list": [],
+        "support_ui": true,
+        "support_validation": true,
+        "support_generation": true,
+        "is_mcal": false,
+        "internal_behavior": {
+            "support": false,
+            "dynamic": false
+        },
+        "plug_in_path": "."
+    }
+}

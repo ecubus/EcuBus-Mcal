@@ -1,0 +1,235 @@
+{
+    "Os":
+    {
+        "/AUTOSAR/EcucDefs/Os/OsTask/OsTaskType":
+        [
+            {
+                "value": ["BASIC"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsTask/OsTaskStackSharing":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            },
+            {
+                "value": ["EXTENDED"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsTask/OsTaskStackSharing":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsTask/OsTaskAliveCheckPoint":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/WdgM/WdgMGeneral/WdgMSupervisedEntity":
+                    {
+                        "set_method": "create_wdgm_config_container",
+                        "is_arxml": true
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/WdgM/WdgMGeneral/WdgMSupervisedEntity":
+                    {
+                        "set_method": "del_wdgm_config_container",
+                        "is_arxml": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsUsePreStartTask":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsTask":
+                    {
+                        "set_method": "create_prestarttask_container",
+                        "is_arxml": true
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsTask":
+                    {
+                        "set_method": "delete_prestarttask_container",
+                        "is_arxml": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsEventJitterStatistics":
+        [
+            {
+                "value": ["ALL", "NONE"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsEvent/Jitter Statistics":
+                    {
+                        "set_method": "unchanged",
+                        "ref_judge_item": null,
+                        "is_locked": true
+                    }
+                }
+            },
+            {
+                "value": ["INDIVIDUAL"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsEvent/Jitter Statistics":
+                    {
+                        "set_method": "unchanged",
+                        "ref_judge_item": null,
+                        "is_locked": false
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsErrorHook":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsErrorHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsErrorHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsProtectionHook":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsProtectionHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsProtectionHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsShutdownHook":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsShutdownHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsShutdownHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": true
+                    }
+                }
+            }
+        ],
+        "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsStartupHook":
+        [
+            {
+                "value": ["true"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsStartupHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            },
+            {
+                "value": ["false"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/Os/OsOS/OsHooks/OsStartupHookStackSize":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": true
+                    }
+                }
+            }
+        ]
+    },
+    "MemPool":
+    {
+        "/AUTOSAR/EcucDefs/MemPool/MemPool/MemType":
+        [
+            {
+                "value": ["CORE"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/MemPool/MemPool/CoreID":
+                    {
+                        "set_method": "clear_line",
+                        "is_locked": true
+                    }
+                }
+            },
+            {
+                "value": ["AUTOMATIC", "GLOBAL"],
+                "action":
+                {
+                    "/AUTOSAR/EcucDefs/MemPool/MemPool/CoreID":
+                    {
+                        "set_method": "unchanged",
+                        "is_locked": false
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "software": "components",
+    "components": {
+        "version": "V0.1.0-DEV",
+        "compatibleProjectVersions": [
+            "V0.1.x"
+        ]
+    }
+}
