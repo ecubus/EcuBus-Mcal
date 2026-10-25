@@ -1,5 +1,5 @@
-# ##############################################################################
-# mcal_pc/components/Can/CMakeLists.txt
+﻿# ##############################################################################
+# vendor/ecubus/components/Can/CMakeLists.txt
 #
 # Copyright (c) 2025 Li Auto Inc. and its affiliates
 # Licensed under the Apache License, Version 2.0(the "License");
