@@ -5,16 +5,16 @@ Point VCOS Studio **system_path** at this directory. Do not import `components/C
 ## New project
 
 1. Studio → New Project.
-2. **Configurator PlugIn Path / system_path**: `vcos/mcal_pc/configurator_plug_in`.
+2. **Configurator PlugIn Path / system_path**: `vcos/vendor/ecubus/configurator_plug_in`.
 3. **Target**: `PC_Common` (compiler `vs20xx`).
 4. Enable **Can**, **CanIf**, and the other BSW modules you need. CanIf depends on Can.
 
-Studio loads **Can** from `vcos/mcal_pc/components/Can` (module name stays `Can`, so CanIf refs work). Os, CanIf, PduR, Com, and the rest come from `vcos/components`. `PC_Common` does not register Infineon `Can_17_McmCan`, so there is no name clash.
+Studio loads **Can** from `vcos/vendor/ecubus/components/Can` (module name stays `Can`, so CanIf refs work). Os, CanIf, PduR, Com, and the rest come from `vcos/components`. `PC_Common` does not register Infineon `Can_17_McmCan`, so there is no name clash.
 
 ## Layout
 
 ```text
-mcal_pc/configurator_plug_in
+vendor/ecubus/configurator_plug_in
 ├── components_plug_in_cfg.json   # PC_Common + module list
 ├── components_version.py
 ├── compatibility.json
@@ -23,4 +23,4 @@ mcal_pc/configurator_plug_in
 └── system_secondary/             # Studio menus / BswM common data
 ```
 
-Relative `plug_in_path` values assume this pack lives at `vcos/mcal_pc/configurator_plug_in`, next to `vcos/components`.
+Relative `plug_in_path` values assume this pack lives at `vcos/vendor/ecubus/configurator_plug_in`, (one level deeper under vendor/; BSW paths use `../../../components`).
